@@ -1,3 +1,10 @@
+# Test logs
+reports
+screenshots
+
+# auto generated
+public/bundle.js
+
 # Logs
 logs
 *.log
@@ -56,4 +63,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

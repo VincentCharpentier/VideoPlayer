@@ -1,0 +1,25 @@
+// indicator height & width
+$ctrl_ind_size: 1rem;
+
+.slider_input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    .vertical .indicator {
+        transform: translate(0%,50%);
+    }
+
+    .indicator {
+        position: absolute;
+        z-index: 1001;
+        height: $ctrl_ind_size;
+        width: $ctrl_ind_size;
+        background: #000;
+        border-radius: 50%;
+        // X-positionned from center
+        transform: translateX(-50%);
+        box-shadow: 0.5pt 0.5pt 4pt -1pt rgba(0,0,0,.6);
+    }
+}

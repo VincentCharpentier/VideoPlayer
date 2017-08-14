@@ -1,0 +1,30 @@
+
+.progress_bar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .bar {
+        background: #000;
+        position: absolute;
+        z-index: 100;
+        
+        &.bg {
+            background: #EEE;
+        }
+    }
+    &.horizontal {
+        .bar.bg {
+            width: 100%;
+        }
+    }
+    &.vertical {
+        justify-content: center;
+        align-items: flex-end;
+        .bar.bg {
+            height: 100%;
+        }
+    }
+}

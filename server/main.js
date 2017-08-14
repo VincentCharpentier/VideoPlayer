@@ -23,9 +23,8 @@ app.use('/', express.static(publicDir));
 // try to match api function
 app.use('/api', ApiRouter);
 
-// Always return the main index.html, so react-router render the route in the client
+// Always return the main index.html
 app.get('*', (req, res) => {
-  console.log("test")
   res.sendFile(path.resolve(publicDir, 'index.html'));
 });
 
